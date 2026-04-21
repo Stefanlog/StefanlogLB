@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StefanlogLB Leaderboards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20260419d">
+</head>
+<body>
+  <div class="top-stripe" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="brand-name" href="index.html">StefanlogLB</a>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="leaderboards.html" class="nav-link active">Leaderboards</a>
+      <a href="bonus.html" class="nav-link">Bonus</a>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://www.youtube.com/@stefanlog1" target="_blank" rel="noreferrer" class="social-btn">YouTube</a>
+      <a href="https://discord.gg/DGbxRDHEcN" target="_blank" rel="noreferrer" class="social-btn">Discord</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="board-switcher" aria-label="Leaderboard selection">
+      <div class="switcher-frame switcher-frame--single">
+        <div class="leaderboard-btn leaderboard-btn--logo active">
+          <img src="tf2logo.png" alt="TF2Easy">
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-panel">
+      <div class="leaderboard-hero-logo">
+        <img src="tf2logo.png" alt="TF2Easy">
+      </div>
+      <p class="eyebrow">Stefanlog Weekly Board</p>
+      <h1 id="leaderboard-title">Weekly Leaderboard</h1>
+      <div class="hero-underline" aria-hidden="true"></div>
+
+      <div class="prize-pool" aria-label="Prize pool">
+        <div class="coin-badge" aria-hidden="true">
+          <img src="coin.svg" alt="">
+        </div>
+        <div class="prize-copy">
+          <span class="amount">10</span>
+          <span class="text">Weekly Coins</span>
+        </div>
+      </div>
+
+      <div class="payout-strip" aria-label="Top three payouts">
+        <article class="payout-card">
+          <p class="payout-place">1st</p>
+          <p class="payout-value">5 Coins</p>
+        </article>
+        <article class="payout-card">
+          <p class="payout-place">2nd</p>
+          <p class="payout-value">3 Coins</p>
+        </article>
+        <article class="payout-card">
+          <p class="payout-place">3rd</p>
+          <p class="payout-value">2 Coins</p>
+        </article>
+      </div>
+
+      <div class="countdown-wrap">
+        <div class="countdown-label">Weekly Reset In:</div>
+        <div class="countdown">
+          <div class="time-block">
+            <span id="days">00</span>
+            <small>Days</small>
+          </div>
+          <div class="time-block">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="time-block">
+            <span id="minutes">00</span>
+            <small>Mins</small>
+          </div>
+          <div class="time-block">
+            <span id="seconds">00</span>
+            <small>Secs</small>
+          </div>
+        </div>
+        <p class="countdown-note">Resets every Sunday at 11:59 PM ET.</p>
+      </div>
+    </section>
+
+    <section class="podium-section" aria-labelledby="competition-heading">
+      <div class="cta-card">
+        <p class="cta-kicker">Stefanlog Bonus</p>
+        <h2 id="competition-heading">Join the Board</h2>
+        <p class="cta-copy">Use Stefanlog on TF2Easy, climb the leaderboard, and compete for 5, 3, and 2 coin weekly prizes across the top 3.</p>
+        <a class="cta-button" href="https://tf2easy.com/r/Stefanlog" target="_blank" rel="noreferrer">Register Now</a>
+      </div>
+
+      <div class="podium-grid">
+        <article class="podium-card podium-card--secondary">
+          <img class="avatar avatar--silver" id="second-avatar" src="mrfrog.png" alt="">
+          <h3 id="second-name">Loading...</h3>
+          <p id="second-status" class="player-meta">Status: --</p>
+          <div class="rank-badge">2nd Place</div>
+          <div class="podium-stat podium-stat--wagered">
+            <span class="podium-stat-label">Wagered</span>
+            <p id="second-score" class="player-score">0 wagered</p>
+          </div>
+          <div class="podium-stat podium-stat--prize">
+            <img src="coin.svg" alt="">
+            <p class="podium-prize-value">3</p>
+          </div>
+        </article>
+
+        <article class="podium-card podium-card--primary">
+          <div class="crown" aria-hidden="true">★</div>
+          <img class="avatar avatar--gold" id="first-avatar" src="mrfrog.png" alt="">
+          <h3 id="first-name">Loading...</h3>
+          <p id="first-status" class="player-meta">Status: --</p>
+          <div class="rank-badge">1st Place</div>
+          <div class="podium-stat podium-stat--wagered">
+            <span class="podium-stat-label">Wagered</span>
+            <p id="first-score" class="player-score">0 wagered</p>
+          </div>
+          <div class="podium-stat podium-stat--prize">
+            <img src="coin.svg" alt="">
+            <p class="podium-prize-value">5</p>
+          </div>
+        </article>
+
+        <article class="podium-card podium-card--secondary">
+          <img class="avatar avatar--bronze" id="third-avatar" src="mrfrog.png" alt="">
+          <h3 id="third-name">Loading...</h3>
+          <p id="third-status" class="player-meta">Status: --</p>
+          <div class="rank-badge">3rd Place</div>
+          <div class="podium-stat podium-stat--wagered">
+            <span class="podium-stat-label">Wagered</span>
+            <p id="third-score" class="player-score">0 wagered</p>
+          </div>
+          <div class="podium-stat podium-stat--prize">
+            <img src="coin.svg" alt="">
+            <p class="podium-prize-value">2</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="details-grid">
+      <article class="detail-card">
+        <p class="detail-label">Host</p>
+        <p class="detail-value">Stefanlog</p>
+      </article>
+      <article class="detail-card">
+        <p class="detail-label">Referral Code</p>
+        <p class="detail-value">STEFANLOG</p>
+      </article>
+      <article class="detail-card">
+        <p class="detail-label">Current Entrants</p>
+        <p class="detail-value" id="referral-total">0</p>
+      </article>
+      <article class="detail-card">
+        <p class="detail-label">Current Board Wagered</p>
+        <p class="detail-value" id="wagered-total">0.00</p>
+      </article>
+    </section>
+
+    <section class="referrals-section">
+      <div class="referrals-card">
+        <div class="referrals-header">
+          <div>
+            <p class="detail-label">Current Board Data</p>
+            <h2>Weekly Standings</h2>
+          </div>
+        </div>
+
+        <div class="referrals-table-wrap">
+          <table class="referrals-table">
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Deposited</th>
+                <th>Wagered</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="referrals-body">
+              <tr>
+                <td colspan="4">Loading referral data...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="footer-brand">StefanlogLB</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@stefanlog1" target="_blank" rel="noreferrer">YouTube</a>
+      <a href="https://discord.gg/DGbxRDHEcN" target="_blank" rel="noreferrer">Discord</a>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20260419d"></script>
+</body>
+</html>

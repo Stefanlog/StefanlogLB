@@ -1,0 +1,34 @@
+<svg width="653" height="128" viewBox="0 0 653 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trailOuter" x1="12" y1="64" x2="182" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF2E6A"/>
+      <stop offset="0.45" stop-color="#FF7B2F"/>
+      <stop offset="1" stop-color="#FFD34F"/>
+    </linearGradient>
+    <linearGradient id="trailInner" x1="38" y1="64" x2="162" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1A1"/>
+      <stop offset="1" stop-color="#FFCC36"/>
+    </linearGradient>
+    <linearGradient id="textWarm" x1="239" y1="18" x2="407" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFBE59"/>
+      <stop offset="1" stop-color="#FF8B1A"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M18 64L55 45H28L68 21H140C165 21 183 39 183 64C183 89 165 107 140 107H68L28 83H55L18 64Z" fill="url(#trailOuter)"/>
+  <path d="M36 64L68 48H49L82 30H139C159 30 173 44 173 64C173 84 159 98 139 98H82L49 80H68L36 64Z" fill="url(#trailInner)"/>
+  <circle cx="128" cy="64" r="27" fill="#FFF46D"/>
+  <circle cx="128" cy="64" r="18" fill="#FFFFFF"/>
+  <path d="M96 50L122 64L96 78V50Z" fill="#FFCC36"/>
+
+  <g fill="url(#textWarm)">
+    <path d="M233 22H336V41H299V108H272V41H233V22Z"/>
+    <path d="M352 22H379V55H423V22H450V108H423V74H379V108H352V22Z"/>
+    <path d="M462 41C462 29 466 20 474 12C482 4 495 0 513 0C525 0 535 2 544 8L534 28C528 24 521 22 514 22C507 22 502 24 499 28C496 31 494 35 494 41H532V61H494V108H467V61H455V41H462Z"/>
+  </g>
+
+  <g fill="#F4F1F7">
+    <path d="M531 22H620V41H558V56H611V75H558V89H623V108H531V22Z"/>
+    <path d="M634 22H652V41H634V22ZM627 56H652V75H627V56ZM620 89H652V108H620V89Z"/>
+  </g>
+</svg>

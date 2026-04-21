@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "data": [
+    {
+      "username": "F1Kill",
+      "avatar": "https://avatars.steamstatic.com/e8bfb6b785e59c4ca415c7bec0a17ee6ac9ca074_full.jpg",
+      "steamid64": "76561198959147652",
+      "deposited": 163.84,
+      "wagered": 23577.50,
+      "comission": 175.91,
+      "status": 1
+    },
+    {
+      "username": "Va$0N",
+      "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
+      "steamid64": "76561198046621220",
+      "deposited": 692.49,
+      "wagered": 16216.02,
+      "comission": 96.58,
+      "status": 2
+    },
+    {
+      "username": "Peridot",
+      "avatar": "https://avatars.steamstatic.com/a08da9470db7db7a58966c1e06704aa447b899ca_full.jpg",
+      "steamid64": "76561198348360598",
+      "deposited": 3345.05,
+      "wagered": 11782.39,
+      "comission": 91.84,
+      "status": 1
+    },
+    {
+      "username": "DeadDaySam",
+      "avatar": "https://avatars.steamstatic.com/4753ae0b5e43109e606d89bc3cbf7edceee82ace_full.jpg",
+      "steamid64": "76561198321499430",
+      "deposited": 287.25,
+      "wagered": 2938.87,
+      "comission": 14.57,
+      "status": 2
+    },
+    {
+      "username": "bubbles",
+      "avatar": "https://avatars.steamstatic.com/62a263e45e4213974e79a4256c84b715940533dd_full.jpg",
+      "steamid64": "76561198385624226",
+      "deposited": 193.62,
+      "wagered": 2711.76,
+      "comission": 14.24,
+      "status": 1
+    },
+    {
+      "username": "Deadly Reaper #TF2isEasy",
+      "avatar": "https://avatars.steamstatic.com/b90300ee4d12244a2c3aa4cba7e0da3e93b509ec_full.jpg",
+      "steamid64": "76561198010517907",
+      "deposited": 736.40,
+      "wagered": 1895.93,
+      "comission": 10.77,
+      "status": 2
+    },
+    {
+      "username": "the Egzotic",
+      "avatar": "https://avatars.steamstatic.com/eece549969e03c76571e72b384d3e0c33eb46abc_full.jpg",
+      "steamid64": "76561199493582916",
+      "deposited": 533.97,
+      "wagered": 1687.49,
+      "comission": 8.22,
+      "status": 2
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "per_page": 7
+  }
+}

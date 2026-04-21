@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "data": [
+    {
+      "username": "Va$0N",
+      "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
+      "steamid64": "76561198046621220",
+      "deposited": 140.46,
+      "wagered": 3951.88,
+      "comission": 22.290000000000003,
+      "status": 2
+    },
+    {
+      "username": "Asperon RustEasy.com",
+      "avatar": "https://avatars.steamstatic.com/983f461a43abc8d5450a5c1985e3cbce03dc7055_full.jpg",
+      "steamid64": "76561199466009398",
+      "deposited": 0,
+      "wagered": 15.60,
+      "comission": 0.02,
+      "status": 0
+    },
+    {
+      "username": "Question",
+      "avatar": "https://avatars.steamstatic.com/ecb1c1e937315154aa6cdd0bac86098c4910cb1e_full.jpg",
+      "steamid64": "76561199689320778",
+      "deposited": 0,
+      "wagered": 9.80,
+      "comission": 0.02,
+      "status": 0
+    },
+    {
+      "username": "soshiro",
+      "avatar": "https://avatars.steamstatic.com/e268d0e3954d4d55f7fb80a3b7cd6171fda00579_full.jpg",
+      "steamid64": "76561199700887070",
+      "deposited": 0,
+      "wagered": 9.51,
+      "comission": 0.06,
+      "status": 1
+    },
+    {
+      "username": "JuhnJun #TF2isEasy",
+      "avatar": "https://avatars.steamstatic.com/33b5ea4f8479db45efdf496982703f6e491026c7_full.jpg",
+      "steamid64": "76561198335305254",
+      "deposited": 0,
+      "wagered": 9.11,
+      "comission": 0.01,
+      "status": 2
+    },
+    {
+      "username": "Winfarlory",
+      "avatar": "https://avatars.steamstatic.com/f2eaa4333b00e6e49f69d7a01f6e4188c21291cc_full.jpg",
+      "steamid64": "76561199222049477",
+      "deposited": 0,
+      "wagered": 4.75,
+      "comission": 0.01,
+      "status": 1
+    },
+    {
+      "username": "CAJOVNIK",
+      "avatar": "https://avatars.steamstatic.com/95f14aa9f20832775f2f32a62add51d0f8c335d9_full.jpg",
+      "steamid64": "76561199048924875",
+      "deposited": 0,
+      "wagered": 0.07,
+      "comission": 0,
+      "status": 1
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "per_page": 7
+  }
+}
