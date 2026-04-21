@@ -248,11 +248,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.1rem 1rem;
+  padding: 1.1rem 0.65rem;
   border: 4px solid var(--ink);
   box-shadow: 6px 6px 0 var(--ink);
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
   transition: transform 160ms ease;
 }
 
@@ -276,7 +278,11 @@ a {
 }
 
 .home-link-label {
-  font-size: 1.25rem;
+  display: block;
+  width: 100%;
+  font-size: clamp(0.92rem, 1.35vw, 1.1rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .home-link-tag {
