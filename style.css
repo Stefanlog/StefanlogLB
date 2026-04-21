@@ -254,7 +254,6 @@ a {
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  overflow: hidden;
   transition: transform 160ms ease;
 }
 
