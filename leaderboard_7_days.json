@@ -17,6 +17,15 @@
       "deposited": 0.0,
       "wagered": 1.65,
       "comission": 0.0,
+      "status": 2
+    },
+    {
+      "username": "CAJOVNIK",
+      "avatar": "https://avatars.steamstatic.com/95f14aa9f20832775f2f32a62add51d0f8c335d9_full.jpg",
+      "steamid64": "76561199048924875",
+      "deposited": 0.16,
+      "wagered": 0.14,
+      "comission": 0.0,
       "status": 0
     },
     {
