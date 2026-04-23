@@ -5,6 +5,7 @@ import os
 import shutil
 import sqlite3
 import tempfile
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import unquote
@@ -16,7 +17,9 @@ API_URL = "https://www.tf2easy.com/api/proxy/myapi/affiliate/getReferredUsers?pa
 SOURCE_FILE = BASE_DIR / "weekly_source.json"
 TARGET_FILE = BASE_DIR / "leaderboard_7_days.json"
 BACKUP_FILE = BASE_DIR / "leaderboard_7_days.backup.json"
+STATE_FILE = BASE_DIR / "weekly_accumulator_state.json"
 LOG_FILE = BASE_DIR / "auto_update_weekly.log"
+SUNDAY = 6
 
 
 def log(message: str) -> None:
@@ -146,13 +149,148 @@ def normalize_payload(payload: dict) -> dict:
     }
 
 
+def current_period_key() -> str:
+    now = datetime.now().astimezone()
+    days_since_sunday = (now.weekday() - SUNDAY) % 7
+    reset = now - timedelta(days=days_since_sunday)
+    reset = reset.replace(hour=23, minute=59, second=59, microsecond=0)
+
+    if now < reset:
+        reset = reset - timedelta(days=7)
+
+    return reset.strftime("%Y-%m-%dT%H:%M:%S%z")
+
+
+def load_state(period_key: str) -> dict:
+    if not STATE_FILE.exists():
+        return {
+            "period_key": period_key,
+            "entries": {},
+            "last_seen": {},
+            "_fresh": True,
+            "_fresh_reason": "missing",
+        }
+
+    try:
+        state = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        log("Accumulator state was invalid JSON. Starting a fresh weekly state.")
+        return {
+            "period_key": period_key,
+            "entries": {},
+            "last_seen": {},
+            "_fresh": True,
+            "_fresh_reason": "invalid",
+        }
+
+    if state.get("period_key") != period_key:
+        log("Weekly reset detected. Starting all tracked wager amounts at 0.")
+        return {
+            "period_key": period_key,
+            "entries": {},
+            "last_seen": {},
+            "_fresh": True,
+            "_fresh_reason": "reset",
+        }
+
+    if not isinstance(state.get("entries"), dict):
+        state["entries"] = {}
+    if not isinstance(state.get("last_seen"), dict):
+        state["last_seen"] = {}
+
+    return state
+
+
+def load_existing_board_entries() -> dict[str, dict]:
+    if not TARGET_FILE.exists():
+        return {}
+
+    try:
+        payload = json.loads(TARGET_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+    entries = {}
+    for entry in payload.get("data", []):
+        if isinstance(entry, dict) and entry.get("steamid64"):
+            entries[str(entry["steamid64"])] = entry
+
+    return entries
+
+
+def apply_weekly_accumulator(payload: dict) -> dict:
+    period_key = current_period_key()
+    state = load_state(period_key)
+    entries_by_id = state["entries"]
+    last_seen = state["last_seen"]
+    is_fresh_period = bool(state.get("_fresh"))
+    fresh_reason = state.get("_fresh_reason")
+    seeded_existing_ids = set()
+
+    if is_fresh_period and fresh_reason == "missing":
+        existing_entries = load_existing_board_entries()
+        if existing_entries:
+            entries_by_id.update(existing_entries)
+            seeded_existing_ids = set(existing_entries)
+            is_fresh_period = False
+            log("Created accumulator state from the current leaderboard file.")
+
+    for live_entry in payload["data"]:
+        steamid = live_entry["steamid64"]
+        current_wagered = float(live_entry.get("wagered", 0) or 0)
+        previous_seen = float(last_seen.get(steamid, 0) or 0)
+
+        tracked_entry = entries_by_id.get(steamid)
+        if tracked_entry is None:
+            tracked_entry = dict(live_entry)
+            tracked_entry["wagered"] = 0 if is_fresh_period else current_wagered
+        else:
+            tracked_entry.update(
+                {
+                    "username": live_entry["username"],
+                    "avatar": live_entry["avatar"],
+                    "steamid64": steamid,
+                    "deposited": live_entry["deposited"],
+                    "comission": live_entry["comission"],
+                    "status": live_entry["status"],
+                }
+            )
+
+            if steamid not in seeded_existing_ids and current_wagered > previous_seen:
+                tracked_entry["wagered"] = float(tracked_entry.get("wagered", 0) or 0) + (
+                    current_wagered - previous_seen
+                )
+
+        last_seen[steamid] = current_wagered
+        entries_by_id[steamid] = tracked_entry
+
+    accumulated_entries = sorted(
+        entries_by_id.values(),
+        key=lambda entry: float(entry.get("wagered", 0) or 0),
+        reverse=True,
+    )
+
+    state.pop("_fresh", None)
+    state.pop("_fresh_reason", None)
+    state["period_key"] = period_key
+    state["updated_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+    STATE_FILE.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+
+    return {
+        "success": True,
+        "data": accumulated_entries,
+        "pagination": {"current_page": 1, "per_page": len(accumulated_entries)},
+    }
+
+
 def main() -> None:
     log("Starting Firefox-cookie weekly update.")
     cookie_db = find_firefox_cookie_db()
     log(f"Using Firefox cookie DB: {cookie_db}")
     cookies = read_tf2easy_cookies(cookie_db)
     log("Loaded TF2Easy cookies from Firefox.")
-    payload = normalize_payload(fetch_weekly_payload(cookies))
+    live_payload = normalize_payload(fetch_weekly_payload(cookies))
+    payload = apply_weekly_accumulator(live_payload)
 
     if TARGET_FILE.exists():
         shutil.copyfile(TARGET_FILE, BACKUP_FILE)
@@ -162,7 +300,7 @@ def main() -> None:
     TARGET_FILE.write_text(text, encoding="utf-8")
 
     first_entry = payload["data"][0]
-    log(f"Weekly leaderboard updated. Entries={len(payload['data'])}.")
+    log(f"Weekly accumulated leaderboard updated. Entries={len(payload['data'])}.")
     log(f"First entry: {first_entry['username']}, wagered={first_entry['wagered']:.2f}")
 
 
