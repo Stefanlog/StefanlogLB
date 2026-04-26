@@ -20,6 +20,15 @@
       "status": 0
     },
     {
+      "username": "Emerald",
+      "avatar": "https://avatars.steamstatic.com/1f8857a45ba8416204ba2bde753d40cc99838bb5_full.jpg",
+      "steamid64": "76561199561087605",
+      "deposited": 0.0,
+      "wagered": 2.03,
+      "comission": 0.0,
+      "status": 0
+    },
+    {
       "username": "Question",
       "avatar": "https://avatars.steamstatic.com/ecb1c1e937315154aa6cdd0bac86098c4910cb1e_full.jpg",
       "steamid64": "76561199689320778",
@@ -50,15 +59,6 @@
       "username": "amatapar",
       "avatar": "https://avatars.steamstatic.com/0fba5a587ea62a9164277d3661f6eecccbc51242_full.jpg",
       "steamid64": "76561199101196157",
-      "deposited": 0.0,
-      "wagered": 0.0,
-      "comission": 0.0,
-      "status": 0
-    },
-    {
-      "username": "Emerald",
-      "avatar": "https://avatars.steamstatic.com/1f8857a45ba8416204ba2bde753d40cc99838bb5_full.jpg",
-      "steamid64": "76561199561087605",
       "deposited": 0.0,
       "wagered": 0.0,
       "comission": 0.0,
