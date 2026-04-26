@@ -54,10 +54,19 @@
       "wagered": 0.0,
       "comission": 0.0,
       "status": 0
+    },
+    {
+      "username": "Emerald",
+      "avatar": "https://avatars.steamstatic.com/1f8857a45ba8416204ba2bde753d40cc99838bb5_full.jpg",
+      "steamid64": "76561199561087605",
+      "deposited": 0.0,
+      "wagered": 0.0,
+      "comission": 0.0,
+      "status": 0
     }
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 6
+    "per_page": 7
   }
 }
