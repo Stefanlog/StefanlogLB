@@ -2,6 +2,15 @@
   "success": true,
   "data": [
     {
+      "username": "MrFrog",
+      "avatar": "https://avatars.steamstatic.com/4c8502d35e168aae04d048b42f985c15ca88be10_full.jpg",
+      "steamid64": "76561199146396443",
+      "deposited": 0.0,
+      "wagered": 202.8,
+      "comission": 0.35,
+      "status": 0
+    },
+    {
       "username": "Emerald",
       "avatar": "https://avatars.steamstatic.com/1f8857a45ba8416204ba2bde753d40cc99838bb5_full.jpg",
       "steamid64": "76561199561087605",
@@ -58,6 +67,6 @@
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 6
+    "per_page": 7
   }
 }
