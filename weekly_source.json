@@ -6,7 +6,7 @@
       "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
       "steamid64": "76561198046621220",
       "deposited": 0.0,
-      "wagered": 486.65000000000003,
+      "wagered": 0,
       "comission": 2.69,
       "status": 1
     },
@@ -15,16 +15,16 @@
       "avatar": "https://avatars.steamstatic.com/983f461a43abc8d5450a5c1985e3cbce03dc7055_full.jpg",
       "steamid64": "76561199466009398",
       "deposited": 0.0,
-      "wagered": 117.46000000000001,
+      "wagered": 0,
       "comission": 0.64,
-      "status": 0
+      "status": 1
     },
     {
       "username": "Emerald",
-      "avatar": "https://avatars.steamstatic.com/1f8857a45ba8416204ba2bde753d40cc99838bb5_full.jpg",
+      "avatar": "https://avatars.steamstatic.com/af60f25710d19bbaaf69ff6b4b04186821a61f09_full.jpg",
       "steamid64": "76561199561087605",
       "deposited": 0.0,
-      "wagered": 83.25999999999999,
+      "wagered": 0,
       "comission": 0.0,
       "status": 0
     },
@@ -33,22 +33,13 @@
       "avatar": "https://avatars.steamstatic.com/95f14aa9f20832775f2f32a62add51d0f8c335d9_full.jpg",
       "steamid64": "76561199048924875",
       "deposited": 0.0,
-      "wagered": 2.06,
-      "comission": 0.0,
-      "status": 0
-    },
-    {
-      "username": "amatapar",
-      "avatar": "https://avatars.steamstatic.com/0fba5a587ea62a9164277d3661f6eecccbc51242_full.jpg",
-      "steamid64": "76561199101196157",
-      "deposited": 0.0,
       "wagered": 0,
       "comission": 0.0,
-      "status": 1
+      "status": 0
     }
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 5
+    "per_page": 4
   }
 }
