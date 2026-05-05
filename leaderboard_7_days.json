@@ -2,6 +2,15 @@
   "success": true,
   "data": [
     {
+      "username": "Emerald",
+      "avatar": "https://avatars.steamstatic.com/af60f25710d19bbaaf69ff6b4b04186821a61f09_full.jpg",
+      "steamid64": "76561199561087605",
+      "deposited": 0.0,
+      "wagered": 5.520000000000001,
+      "comission": 0.0,
+      "status": 0
+    },
+    {
       "username": "Va$0N",
       "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
       "steamid64": "76561198046621220",
@@ -16,17 +25,8 @@
       "steamid64": "76561199466009398",
       "deposited": 0.0,
       "wagered": 0,
-      "comission": 0.64,
+      "comission": 0.01,
       "status": 1
-    },
-    {
-      "username": "Emerald",
-      "avatar": "https://avatars.steamstatic.com/af60f25710d19bbaaf69ff6b4b04186821a61f09_full.jpg",
-      "steamid64": "76561199561087605",
-      "deposited": 0.0,
-      "wagered": 0,
-      "comission": 0.0,
-      "status": 0
     },
     {
       "username": "CAJOVNIK",
