@@ -6,8 +6,8 @@
       "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
       "steamid64": "76561198046621220",
       "deposited": 0.0,
-      "wagered": 1736.04,
-      "comission": 0.0,
+      "wagered": 3497.38,
+      "comission": 10.47,
       "status": 0
     },
     {
@@ -81,10 +81,19 @@
       "wagered": 0.0,
       "comission": 0.0,
       "status": 0
+    },
+    {
+      "username": "stefanlog321",
+      "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
+      "steamid64": "76561198768003251",
+      "deposited": 0.0,
+      "wagered": 0.0,
+      "comission": 0.0,
+      "status": 0
     }
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 9
+    "per_page": 10
   }
 }
