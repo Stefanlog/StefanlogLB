@@ -90,10 +90,19 @@
       "wagered": 0.0,
       "comission": 0.0,
       "status": 0
+    },
+    {
+      "username": "Redclayallday",
+      "avatar": "https://avatars.steamstatic.com/9193068f282cec641bde3d4bac9abe00cc1106a6_full.jpg",
+      "steamid64": "76561199102759480",
+      "deposited": 0.0,
+      "wagered": 0.0,
+      "comission": 0.0,
+      "status": 0
     }
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 10
+    "per_page": 11
   }
 }
