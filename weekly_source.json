@@ -11,21 +11,21 @@
       "status": 0
     },
     {
+      "username": "ORB",
+      "avatar": "https://avatars.steamstatic.com/5a6bf345200ed238dcbdccd22f4e4ace116fa16b_full.jpg",
+      "steamid64": "76561198099828847",
+      "deposited": 44.36,
+      "wagered": 144.44,
+      "comission": 0.7,
+      "status": 0
+    },
+    {
       "username": "The Miz",
       "avatar": "https://avatars.steamstatic.com/da43fa7876c085ba55565353f209803e03cdfaef_full.jpg",
       "steamid64": "76561199561087605",
       "deposited": 17.27,
       "wagered": 20.32,
       "comission": 0.04,
-      "status": 0
-    },
-    {
-      "username": "ORB",
-      "avatar": "https://avatars.steamstatic.com/5a6bf345200ed238dcbdccd22f4e4ace116fa16b_full.jpg",
-      "steamid64": "76561198099828847",
-      "deposited": 0.0,
-      "wagered": 14.14,
-      "comission": 0.08,
       "status": 0
     },
     {
