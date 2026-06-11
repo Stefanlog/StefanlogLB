@@ -2,6 +2,15 @@
   "success": true,
   "data": [
     {
+      "username": "Va$0N",
+      "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
+      "steamid64": "76561198046621220",
+      "deposited": 34.21,
+      "wagered": 208.07,
+      "comission": 1.15,
+      "status": 0
+    },
+    {
       "username": "Asperon RustEasy.com",
       "avatar": "https://avatars.steamstatic.com/983f461a43abc8d5450a5c1985e3cbce03dc7055_full.jpg",
       "steamid64": "76561199466009398",
@@ -17,15 +26,6 @@
       "deposited": 17.15,
       "wagered": 13.11,
       "comission": 0.08,
-      "status": 0
-    },
-    {
-      "username": "Va$0N",
-      "avatar": "https://avatars.steamstatic.com/daed85e049a2e819ee18369998a91d1cf7e550f4_full.jpg",
-      "steamid64": "76561198046621220",
-      "deposited": 0.0,
-      "wagered": 0,
-      "comission": 0.0,
       "status": 0
     },
     {
