@@ -14,9 +14,9 @@
       "username": "Reverent of Rats",
       "avatar": "https://avatars.steamstatic.com/da43fa7876c085ba55565353f209803e03cdfaef_full.jpg",
       "steamid64": "76561199561087605",
-      "deposited": 466.80000000000007,
-      "wagered": 1153.0700000000002,
-      "comission": 3.5500000000000003,
+      "deposited": 500.32000000000005,
+      "wagered": 1500.6900000000003,
+      "comission": 5.11,
       "status": 0
     },
     {
@@ -53,7 +53,7 @@
       "deposited": 0.0,
       "wagered": 0.02,
       "comission": 0.0,
-      "status": 1
+      "status": 0
     },
     {
       "username": "markettfbot",
@@ -99,10 +99,19 @@
       "wagered": 0.0,
       "comission": 0.0,
       "status": 0
+    },
+    {
+      "username": "stefanlog321",
+      "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
+      "steamid64": "76561198679629194",
+      "deposited": 0.0,
+      "wagered": 0.0,
+      "comission": 0.0,
+      "status": 0
     }
   ],
   "pagination": {
     "current_page": 1,
-    "per_page": 11
+    "per_page": 12
   }
 }
