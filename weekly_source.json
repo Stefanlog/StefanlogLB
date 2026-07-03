@@ -26,7 +26,7 @@
       "deposited": 0.0,
       "wagered": 7.84,
       "comission": 0.02,
-      "status": 1
+      "status": 2
     },
     {
       "username": "Asperon RustEasy.com",
@@ -44,7 +44,7 @@
       "deposited": 1.05,
       "wagered": 0.21,
       "comission": 0.0,
-      "status": 0
+      "status": 1
     },
     {
       "username": "rustusyou",
