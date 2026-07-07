@@ -7,25 +7,25 @@
       "steamid64": "76561199466009398",
       "deposited": 0.0,
       "wagered": 3.3200000000000003,
-      "comission": 0.02,
+      "comission": 0.01,
       "status": 0
     },
     {
       "username": "V\u00f8lt.",
       "avatar": "https://avatars.steamstatic.com/0e0e181a9747a10647994e97380a4523339979d3_full.jpg",
       "steamid64": "76561198445532994",
-      "deposited": 62.87,
+      "deposited": 0.0,
       "wagered": 0,
-      "comission": 6.9799999999999995,
+      "comission": 0.64,
       "status": 2
     },
     {
       "username": "Reverent of Rats",
       "avatar": "https://avatars.steamstatic.com/da43fa7876c085ba55565353f209803e03cdfaef_full.jpg",
       "steamid64": "76561199561087605",
-      "deposited": 450.83000000000004,
+      "deposited": 354.21000000000004,
       "wagered": 0,
-      "comission": 7.029999999999999,
+      "comission": 6.609999999999999,
       "status": 1
     },
     {
@@ -34,7 +34,7 @@
       "steamid64": "76561198046621220",
       "deposited": 0.0,
       "wagered": 0,
-      "comission": 0.02,
+      "comission": 0.0,
       "status": 2
     },
     {
