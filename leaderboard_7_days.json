@@ -5,9 +5,9 @@
       "username": "Azula Von Rosenberg",
       "avatar": "https://avatars.steamstatic.com/5f81f0d2d1933ae09df0260be24daabbc76b8fec_full.jpg",
       "steamid64": "76561199520956643",
-      "deposited": 5.7,
+      "deposited": 0.0,
       "wagered": 0,
-      "comission": 1.9699999999999998,
+      "comission": 1.5299999999999998,
       "status": 2
     },
     {
@@ -16,7 +16,7 @@
       "steamid64": "76561198867230520",
       "deposited": 0.0,
       "wagered": 0,
-      "comission": 0.2,
+      "comission": 0.12,
       "status": 2
     },
     {
@@ -25,8 +25,8 @@
       "steamid64": "76561199585786279",
       "deposited": 0.0,
       "wagered": 0,
-      "comission": 0.01,
-      "status": 2
+      "comission": 0.0,
+      "status": 0
     }
   ],
   "pagination": {
