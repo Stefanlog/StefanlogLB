@@ -7,7 +7,7 @@
       "steamid64": "76561198694968909",
       "deposited": 0.0,
       "wagered": 13.380000000000024,
-      "comission": 0.05,
+      "comission": 0.04,
       "status": 0
     },
     {
@@ -16,7 +16,7 @@
       "steamid64": "76561199466009398",
       "deposited": 0.0,
       "wagered": 3.0900000000000034,
-      "comission": 0.03,
+      "comission": 0.01,
       "status": 1
     }
   ],
