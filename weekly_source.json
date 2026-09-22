@@ -6,9 +6,9 @@
       "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
       "steamid64": "76561198694968909",
       "deposited": 0.0,
-      "wagered": 0.2799999999999998,
+      "wagered": 0,
       "comission": 0.01,
-      "status": 0
+      "status": 1
     },
     {
       "username": "Asperon RustEasy.com",
@@ -24,36 +24,36 @@
       "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
       "steamid64": "76561198680479039",
       "deposited": 0.0,
-      "wagered": 0.0,
+      "wagered": 0,
       "comission": 0.0,
-      "status": 0
+      "status": 1
     },
     {
       "username": "b.ruhczaego",
       "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
       "steamid64": "76561198665387797",
       "deposited": 0.0,
-      "wagered": 0.0,
+      "wagered": 0,
       "comission": 0.0,
-      "status": 0
+      "status": 1
     },
     {
       "username": "bizzb3.28",
       "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
       "steamid64": "76561198652847487",
       "deposited": 0.0,
-      "wagered": 0.0,
+      "wagered": 0,
       "comission": 0.0,
-      "status": 0
+      "status": 1
     },
     {
       "username": "b.izzb328",
       "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg",
       "steamid64": "76561198645866289",
       "deposited": 0.0,
-      "wagered": 0.0,
+      "wagered": 0,
       "comission": 0.0,
-      "status": 0
+      "status": 1
     }
   ],
   "pagination": {
